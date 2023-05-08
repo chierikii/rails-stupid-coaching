@@ -1,13 +1,10 @@
 <h1>Stupid Coaching</h1>
-<p><%= @question%></p>
 
 <p><%= @answer %></p>
   <p>
     <% if @question.blank? %>
-      ??
-    <% else %>
-      <%= @question %>
+    ??
     <% end %>
   </p>
 
-<% link_to "Ask a new question", ask_path %>
+<p><%= link_to "Ask a new question", ask_path, class: "btn btn-primary" %></p>
